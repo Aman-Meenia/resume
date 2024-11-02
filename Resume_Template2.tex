@@ -1,0 +1,142 @@
+\documentclass{muratcan_cv}
+
+\setname{John Doe}{}
+\setaddress{Rando, Canada}
+\setmobile{+1 333-333-3333}
+\setmail{john@johndoe.com}
+% \setcitizenship{Eldian Citizen}
+\setlinkedinaccount{https://www.linkedin.com/in/rick-astley-b6a42b24/} 
+\setgithubaccount{https://github.com/topics/rick-astley} 
+\setthemecolor{MidnightBlue}
+
+    
+\begin{document}
+
+%Create header
+\headerview
+\vspace{1ex} % white space
+%
+\section{Education} 
+    \datedexperience{Master of Engineering (Thesis) - Mechanical}{Sep 2018 - Apr 2021}
+    \explanation{Rando University}{San Francisco, CA} 
+    \datedexperience{Bachelor of Engineering - Mechanical}{Sep 2013 - Apr 2018}
+    \explanation{Rando University}{San Francisco, CA}
+%
+\section{Skills}
+    \newcommand{\skillone}{\createskill{Programming Languages}{Python \cpshalf Java \cpshalf C++ \cpshalf C \cpshalf C\# \cpshalf JavaScript \cpshalf MATLAB \cpshalf Simulink}}
+    %
+    \newcommand{\skilltwo}{\createskill{Technologies}{AWS BS/EC/EC2/ELB \cpshalf Azure AD \cpshalf Docker \cpshalf React.js \cpshalf Flask \cpshalf Redis \cpshalf Spring \cpshalf Android \cpshalf ROS}}
+    %
+    \createskills{\skillone, \skilltwo}
+    \vspace{-3mm} % reduces whitespace!
+    %
+% 
+\section{Experience}
+    %
+    \datedexperience{Rando University}{May 2018 - Mar 2021}
+    \explanation{Graduate Control Systems Researcher}{San Francisco, CA}
+    \explanationdetail{
+    \smallskip
+     \coloredbullet\ %
+     Developed a novel modification to a quaternion-based control system that optimizes control allocation within a quadrotor's actuator constraints to improve its stability and performance.
+    
+    \smallskip 
+    \coloredbullet\ %
+     Modeled and simulated a quadrotor's attitude and translational dynamics in MATLAB/Simulink to quantify the stability and performance improvements of the proposed control system.
+     
+     \smallskip
+     \coloredbullet\ %
+     Adapted and extended existing C++ code architectures to facilitate prototype implementation and performed hardware-in-the-loop simulations, using Gazebo/ROS for testing.
+     
+     \smallskip
+     }
+     %
+     \datedexperience{Rando Space Company}{Sep 2017 - Dec 2017} 
+    \explanation{Satellite Simulations Intern}{San Francisco, CA} 
+    \explanationdetail{ 
+    \smallskip 
+    \coloredbullet\ %
+     Extended foundational Python code that performs Monte Carlo simulations for the Very Specific Space Mission.
+     
+     \smallskip
+     \coloredbullet\ %
+     Coordinated with Senior Engineers in validating and improving models while supplying time-sensitive simulation data for Critical Design Reviews. 
+     
+     \smallskip
+     \coloredbullet\ %
+     Generated reports for the Very Specific Space Mission performance under varied initial conditions of the Specific system to ensure its reliability before launch. 
+     
+    %  \smallskip
+    \bigskip
+     } 
+%
+\section{Notable Projects}
+     %
+    \datedexperience{RandoSite.com}{Mar 2021 - Sep 2021}
+    \explanation{Full Stack Developer}{San Francisco, CA} 
+    \explanationdetail{
+    \smallskip 
+    \coloredbullet\ %
+     Independently built an open-source web application that performs advanced Monte Carlo calculations for options trading, receiving praise from the trading community for its simplicity and accessibility. 
+     
+     
+     \smallskip
+     \coloredbullet\ %
+     Front and back-end development using the React and Flask (Python) frameworks, respectively. These services were containerized using Docker Compose to enable scalability in the software architecture.
+     
+     \smallskip
+     \coloredbullet\ %
+     Used Python optimization techniques to reduce calculation times for a fast API that can serve thousands of users per second. Load balancing in AWS was incorporated to ensure fault-tolerance and reliability of the application.
+     
+     \smallskip
+     \coloredbullet\ %
+     Integrated the Azure Active Directory B2C service for secure user authentication and convenient identity management. 
+     
+    \smallskip
+     }
+     %
+    \datedexperience{RandoApp Android App}{Jan 2018 - Apr 2018}
+    \explanation{Full Stack Developer}{San Francisco, CA} 
+    \explanationdetail{
+    \smallskip
+     \coloredbullet\ %
+     Collaborated with a team in building an Android application for monitoring the health status of trees in San Francisco. The app would assist the city in its urban planning and sustainability goals. 
+    
+    \smallskip 
+    \coloredbullet\ %
+    Implemented the user authentication system using the Android SDK (Java). Google Maps was integrated into the app to enable geotagging of trees and updating their health status by users.
+      
+     \smallskip
+     \coloredbullet\ %
+    Test-driven development of all back-end endpoints using JUnit testing. The back-end was deployed on a Tomcat server.   
+     
+     \smallskip
+     }
+     %
+     \datedexperience{University Space Design Team}{Sep 2016 - May 2018}
+    \explanation{Satellite Control Systems Lead}{San Francisco, CA} 
+    \explanationdetail{
+    \smallskip
+     \coloredbullet\ %
+     Led a team of prospective engineers in designing the control system for Rando University's first student-led Cube Satellite (CubeSat) project. The satellite would compete in the USA Satellite Design Competition.
+    
+    \smallskip 
+    \coloredbullet\ %
+     Simulated the attitude dynamics and kinematics of a CubeSat in MATLAB to optimize controller gains and to size our actuators for power efficiency.
+     
+     \smallskip
+     \coloredbullet\ %
+     Implemented PID and B-dot controllers in Python on a Raspberry Pi for the attitude control of a CubeSat prototype, achieving a desired pointing accuracy of less than 15 degrees for our mission.
+
+     \smallskip
+    %  \bigskip
+     }
+%
+\section{Publications}
+\indent
+\explanationdetail{
+\smallskip 
+\coloredbullet\ %
+ \textbf{John Doe} and FirstName LastName, "Super Awesome Modification for UAV Control Systems," \emph{2020 International Conference on Super Cool Stuff (ICSCS)}, Paris, France.
+ }
+\end{document}
