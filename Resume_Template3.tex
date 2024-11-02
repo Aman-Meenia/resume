@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/aadhithya-dinesh/}{\Large Aadhithya Dinesh}} & Email :  \href{mailto:aadhithyadinesh1997@gmail.com}{aadhithyadinesh1997@gmail.com}\\
+  \href{https://www.linkedin.com/in/aadhithya-dinesh/}{LinkedIn |} 
+  \href{https://github.com/AD97/}{Github}& Mobile :  +91-979-115-2980 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SSN College of Engineering}{Chennai}
+      {Affl. Anna University; B.Tech in Information Technology;  GPA: 3.2| 8.0/10 (Absolute)}{July 2015 - April 2019}
+    \resumeSubheading
+      {Sri Sathya Sai Higher Secondary School}{Puttaparthi, India}
+      {Computer Science; Central Board of Secondary Education); 95.6\% (478/500)
+}{May 2013 - April 2015
+}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+ \resumeSubItem{}{
+     \textbf{Languages}{: Python, C++, Java, Javascript, Typescript, SQL, NoSQL, HTML, CSS/SASS }
+     }
+ \resumeSubItem{}{
+     \textbf{Technologies and Frameworks}{: Pivotal Cloud Foundry, Angular, Microservices (Java Spring boot), Django  }
+    }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Citicorp}{Chennai}
+      {Full Stack Developer - Full time}{July 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Part of the Citi Retail Services (CRS) Acquisitions team that serves over 35 partners in the NAM region. }
+        \resumeItem{}
+        {Followed the Agile model and worked extensively in Angular, Java Springboot Microservices and PCF cloud technologies for deployment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hack For Social Good (SPI Cinemas)}{Chennai}
+      {UI/UX Analyst - Intern}{May 2018 - Jul 2018}
+      \resumeItemListStart
+      \resumeItem{}
+          {Part of the team of knowledge workers that brainstormed UI/UX Design ideas for aspiring startups.}
+        \resumeItem{}
+          {Restructured the User Interface for their website using Bootstrap framework, CSS, HTML and Vanilla Javascript.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Kognify}{Chennai}
+      {Full Stack Developer - Intern}{Dec 2017 - Jan 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Created an automation tool using Angular and Material Design concepts to generate responsive static websites from a JSON file.}
+         \resumeItem{}
+          {Worked on HTTP communications(REST) and AdonisJs at the back-end.}
+      \resumeItemListEnd
+     \resumeSubheading
+      {Check Health}{Chennai}
+      {Software Developer - Intern}{Jun 2017 - Jul 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Used Ionic framework to create the profile page section for their hybrid app.
+         }
+         \resumeItem{}
+          {Worked on Firebase for the back-end.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Mapping Virtual 3D Objects Onto the Face}
+      {An attempt at reducing the time complexity of facial augmented reality algorithms by reducing the number of contour points used to detect orientation of the face.}
+    \resumeSubItem{SSN Code Busters}
+      {An online programming judge and platform developed using SQLite-Django-Bootstrap.}
+  \resumeSubHeadingListEnd
+
+%-------PUBLICATIONS------------------  
+\section{Publications}
+ \resumeSubHeadingListStart
+  \resumeSubItem{}{Dr.T Shree Sharmila, Hemang Shah and Aadhithya Dinesh,
+  \textbf{Analysis of facial landmark features to determine the best subset for finding facial orientation}, 2nd IEEE International Conference on Computational Intelligence in Data Science, (ICCIDS), February 21 – 23, 2019.}
+ \resumeSubHeadingListEnd
+
+%---------------------------------------
+\section{Accomplishments}
+ \resumeSubHeadingListStart
+ \resumeSubItem{}{
+    \textbf{Finalist}{ - SSN Best Speaker Contest} {,2017 and 2018.}
+    }
+    \resumeSubItem{}{
+    \textbf{Sanction Letter}{ - College Funded Project}{, SSN Code Busters, 2016. }
+    }
+    \resumeSubItem{}{
+    \textbf{Placed 8th}{ - Shaastra Programming Contest Finals IIT Madras, 2016.}
+    }
+    \resumeSubItem{}{
+    \textbf{Winner}{ - Inter College Math Quiz(SSN 2klog16), 2016.}
+    }
+    
+ \resumeSubHeadingListEnd
+%-------------------------------------
+%---------Teaching/Leadership Experience-------
+\section{Teaching/Leadership Experience}
+ \resumeSubHeadingListStart
+  \resumeSubItem{}{Conducted an IEEE Workshop on Basics of Web Development and Trends in Web Technology for college students (Jan 2018).}
+  \resumeSubItem{}{Part of the core IT Department Coding Club (2017-2018).}
+  \resumeSubItem{}{Taught Maths, Science and Music for underprivileged school kids as part of the Sri Sathya Sai Seva Organization.}
+ \resumeSubHeadingListEnd
+\end{document}
