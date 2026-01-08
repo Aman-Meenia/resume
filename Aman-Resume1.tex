@@ -1,0 +1,236 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Aman Meenia} \\ \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 7006718112 ~ 
+    \href{mailto:amanmeenia09876@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{amanmeenia09876@gmail.com}} ~ 
+    \href{https://linkedin.com/in/aman-meenia-b32a00206/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/aman-meenia}} \\  \vspace{3pt}
+    \href{https://github.com/Aman-Meenia}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Aman-Meenia}} ~
+    \href{https://amanmeenia.com}{\raisebox{-0.2\height}\faGlobe\ \underline{amanmeenia.com}}
+    \vspace{-8pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Government College of Engineering and Technology Jammu}{Sep. 2020 -- July 2024}
+      {Bachelor of Technology in Computer Science (CGPA: 8.5 / 10)}{Jammu, Jammu and Kashmir}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VJV IT Solutions}{Jan. 2025 -- Present}
+      {Software Engineer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Led frontend development for \textbf{Jiva Sync}, an AI-powered matchmaking platform for event-based connections. Architected user flows and responsive SPA components using \textbf{ReactJS}, implementing modern UI/UX for profile onboarding, matchmaking, and event registrations.}
+        \resumeItem{Designed the system flow for event registration, including capacity checks, idempotent registration handling, and failure scenarios under concurrent requests.}
+        \resumeItem{Independently designed and developed \textbf{SPHA} (Surgery and Post Hospital Assistance), a full-stack nonprofit healthcare platform supporting seniors post-surgery, built with \textbf{ReactJS}, \textbf{NodeJS/Express}, and \textbf{MongoDB}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sportzzbook}{Oct. 2024 -- Jan. 2025}
+      {Software Engineer Intern}{Delhi}
+      \resumeItemListStart
+        \resumeItem{Built scalable web platforms with \textbf{ReactJS}, optimizing interface performance and responsiveness.}
+        \resumeItem{Collaborated on mobile app using \textbf{React Native}, focusing on intuitive design, and resulting in a 15\% increase in user engagement.}
+        \resumeItem{Conducted routine performance testing and debugging, reducing platform latency by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AviSoft}{Feb. 2024 -- Aug. 2024}
+      {Full Stack Developer Intern}{Jammu, Jammu and Kashmir}
+      \resumeItemListStart
+        \resumeItem{Migrated client legacy platform from \textbf{AngularJS} to \textbf{NextJS}, achieving 30\% SEO improvement and 40\% faster load times.}
+        \resumeItem{Integrated server-side rendering in \textbf{NextJS}, optimizing page speed and reducing server costs by 10\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{LogicLab} $|$ \emph{NextJS, Next-Auth, TypeScript, Redis, MongoDB, Judge0, AWS, Nginx}}{ \href{https://logiclab.amanmeenia.com}{Link} $|$ \href{https://github.com/Aman-Meenia/logiclab}{Code} }
+          \resumeItemListStart
+             \resumeItem{Architected and deployed a distributed full-stack coding platform supporting Data Structures \& Algorithms (DSA) practice with real-time code execution. Serves 10+ concurrent active users with 20+ programming problems across multiple difficulty levels.}
+            \resumeItem{Implemented secure JWT-based authentication using \textbf{Next-Auth}, integrated Judge0 API for code compilation, and containerized the application using \textbf{Docker} for horizontal scaling and simplified deployment across environments.}
+            \resumeItem{Deployed production infrastructure on \textbf{AWS EC2} with \textbf{Nginx} as reverse proxy and load balancer. Achieved 99.9\% uptime, sub-200ms API response times through \textbf{Redis} caching, and optimized MongoDB database queries for high-scale operations.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{ChatSphere} $|$ \emph{NextJS, WebSockets, Next-Auth, Prisma, PostgreSQL, Redis, Shadcn}}{ \href{https://aman-meenia.work.gd/login}{Link} $|$ \href{https://github.com/Aman-Meenia/chatsphere}{Code} }
+          \resumeItemListStart
+            \resumeItem{Developed a real-time chat application that allows users to send and receive messages instantly, leveraging \textbf{WebSocket} technology for a responsive user experience.}
+            \resumeItem{Integrated \textbf{NextAuth} for secure user authentication and \textbf{Prisma} for seamless database interactions with \textbf{PostgreSQL}.}
+            \resumeItem{Utilized \textbf{ Redis Pub/Sub} for efficient message handling and scalability, ensuring the application can support a growing user base without performance degradation.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, C/C++, Java, Python} \\
+     \textbf{Web and Mobile Technologies}{: ReactJS, React Native, NextJS, ExpressJS, NodeJS, Redux, MongoDB, Prisma, Postgres} \\
+     \textbf{Tools and Concepts}{: Data Structures and Algorithms, System Design (HLD and LLD), Distributed Systems Fundamentals, REST APIs, Database Design, WebSockets, Redis, AWS, Nginx, SQL, NoSQL, Docker}\\
+     }}
+
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Google KickStart (Round F)}}{}
+          \resumeItemListStart
+            \resumeItem{Secured global rank \textbf{696} in Google KickStart.}
+          \resumeItemListEnd
+          \vspace{-18pt}       \resumeProjectHeading
+          {\textbf{LeetCode} 
+    \href{https://leetcode.com/u/AmanMeenia0001/}{\textit{amanmeenia0001}}}{}
+          \resumeItemListStart
+            \resumeItem{Contest Rating: \textbf{2063} (Top 2.37\%)}
+            \resumeItem{Solved more than \textbf{1600} problems}
+          \resumeItemListEnd
+          \vspace{-13pt} % Consistent spacing
+    \resumeSubHeadingListEnd
+\vspace{-13pt} % Final adjustment to reduce spacing below section
+\end{document}\textbf{}
